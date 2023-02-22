@@ -8,9 +8,8 @@ import pandas as pd
 data = pd.read_csv("https://raw.githubusercontent.com/GirishVerm/Stock_Prediction_Model/main/AAPL%20(1).csv")
 
 
-LowPricesList = []
-for row in data['Low']:
-    LowPricesList.append(row)
+LowPricesList = [row for row in data['Low']]
+
 
 print(LowPricesList)
 
